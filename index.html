@@ -1,25 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="hero">
-        <div class="header">
-        <nav>
-            <ul class="nav-links">
-            <li><a href="#">Sobre mi</a></li>
-            <li><a href="#">Proyectos</a></li>
-            <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-        </div>
-    </header>
-   
+  <!-- Navegación -->
+  <header class="header">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#sobremi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <!-- Sección Hero -->
+  <section class="hero">
+    <div class="hero-content typewriter">
+      <h1>Hola, soy Mario Gerardo</h1>
+      <p>Practicante Full Stack | Apasionado por el desarrollo web</p>
+      <img src="imagenes/WhatsApp Image 2025-05-27 at 12.11.50 AM.jpeg" alt="Foto de Mario Gerardo">
+    </div>
+  </section>
 
+  <!-- Sobre mí -->
+  <section id="sobremi" class="sobre-mi fade-in-scroll">
+    <h2>Sobre mí</h2>
+    <p>
+      Soy Mario Gerardo, practicante de desarrollo Full Stack con entusiasmo por aprender y construir soluciones web funcionales. 
+      Me apasiona el diseño frontend con HTML y CSS, y actualmente estoy expandiendo mis habilidades en JavaScript, bases de datos y desarrollo backend. 
+      Busco crecer profesionalmente mediante la práctica constante y la mejora continua de mis proyectos personales y colaborativos.
+    </p>
+  </section>
 
+<section id="habilidades" class="habilidades fade-in-scroll">
+  <h2>Habilidades</h2>
+
+  <!-- HABILIDADES TÉCNICAS -->
+  <h3 class="subtitulo">Habilidades Técnicas</h3>
+  <div class="grid-habilidades">
+    <div class="card">
+        <img src="imagenes/HTML5_Logo.svg" alt="Html Logo" class="card-img">
+        <h4>HTML</h4><p>Nivel: Alto</p></div>
+    <div class="card">
+        <img src="imagenes/CSS3_logo_and_wordmark.svg.png" alt="Css Logo" class="card-img">
+        <h4>CSS</h4><p>Nivel: Alto</p></div>
+    <div class="card">
+        <img src="imagenes/JavaScript-logo.png" alt="JavaScript Logo" class="card-img">
+        <h4>JavaScript</h4><p>Nivel: Intermedio</p></div>
+    <div class="card">
+        <img src="imagenes/PHP-logo.svg.png" alt="PHP Logo" class="card-img">
+        <h4>PHP</h4><p>Nivel: Básico</p></div>
+    <div class="card">
+        <img src="imagenes/Python-logo-notext.svg.png" alt="Python Logo" class="card-img">
+        <h4>Python</h4><p>Nivel: Básico</p></div>
+    <div class="card">
+        <img src="imagenes/mysql-icon.svg" alt="SQLServer Logo" class="card-img">
+        <h4>SQL Server / MySQL</h4><p>Nivel: Intermedio</p></div>
+    <div class="card">
+        <img src="imagenes/Logo_C_sharp.svg.png" alt="c# Logo" class="card-img">
+        <h4>C#</h4><p>Nivel: Básico</p></div>
+  </div>
+
+  <!-- HABILIDADES BLANDAS -->
+  <h3 class="subtitulo">Habilidades Blandas</h3>
+  <div class="grid-habilidades habilidades-blandas">
+    <div class="card"><h4>Trabajo en equipo</h4><p>Me adapto a entornos colaborativos fácilmente.</p></div>
+    <div class="card"><h4>Comunicación</h4><p>Buena expresión verbal y escrita.</p></div>
+    <div class="card"><h4>Responsabilidad</h4><p>Cumplo mis tareas a tiempo y con compromiso.</p></div>
+    <div class="card"><h4>Resolución de problemas</h4><p>Encuentro soluciones prácticas ante dificultades.</p></div>
+    <div class="card"><h4>Adaptabilidad</h4><p>Me ajusto rápidamente a cambios y nuevos retos.</p></div>
+  </div>
+</section>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="proyectos fade-in-scroll">
+    <h2>Proyectos</h2>
+    <div class="proyectos-grid">
+      <div class="card">
+        <h3>Landing Page Personal</h3>
+        <p>Diseño responsivo usando HTML y CSS. Incluye animaciones suaves, barra de navegación fija y sección de contacto.</p>
+        <a href="#" target="_blank">Ver proyecto</a>
+      </div>
+
+      <div class="card">
+        <h3>CRUD con PHP y MySQL</h3>
+        <p>Aplicación web que permite registrar, editar y eliminar tareas. Con conexión a base de datos local y validación básica.</p>
+        <a href="#" target="_blank">Ver código</a>
+      </div>
+
+      <div class="card">
+        <h3>Sistema de Recomendación de Libros</h3>
+        <p>Proyecto académico en el que integré un sistema de recomendación basado en machine learning para usuarios de una librería virtual.</p>
+        <a href="#" target="_blank">Ver detalles</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto fade-in-scroll">
+    <h2>Contacto</h2>
+    <p>¿Quieres hablar conmigo o colaborar en un proyecto? Estoy disponible para prácticas, freelances o proyectos colaborativos.</p>
+    <p><strong>Correo:</strong> marioghc8@hotmail.com</p>
+    <div class="redes">
+      <a href="https://github.com/MarioSistema" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/mario-gerardo-huari-cervantes-141635360/" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- Script animaciones scroll -->
+  <script>
+    const faders = document.querySelectorAll('.fade-in-scroll');
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
+</body>
 </html>
